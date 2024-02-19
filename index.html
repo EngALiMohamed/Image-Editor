@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Image Editor</title>
+   
+</head>
+<body>
+    <div class="container">
+    <div class="img">
+        <div class="img-box">
+            <img id="img"  >
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="upload">
+            <label class="upload" for="upload">upload</label>
+            <input type="file" id="upload">
+        </div>
+        </div>
+        <div class="filters">
+          <ul class="re">
+                <li>
+                <label for="saturate"><strong>Saturate</strong></label>
+                <input type="range" id="saturate" min="0"max="200" value="100" oninput="this.nextElementSibling.value = this.value">
+                <output id="a" class="co">100</output>
+              </li>
+               <li>
+                <label for="contrast"><strong>Contrast</strong></label>
+                <input type="range" id="contrast" min="0"max="200" value="100" oninput="this.nextElementSibling.value = this.value">
+                <output id="b" class="co">100</output>
+              </li>
+             <li>
+                <label for="brightness"><strong>Brightness</strong></label>
+                <input type="range" id="brightness" min="0"max="200" value="100" oninput="this.nextElementSibling.value = this.value">
+                <output id="c" class="co">100</output>
+              </li>
+              <li>
+                <label for="sepia"><strong>Sepia</strong></label>
+                <input type="range" id="sepia" min="0"max="200" value="0" oninput="this.nextElementSibling.value = this.value">
+                <output id="d" class="co">0</output>
+              </li>
+              <li>
+                <label for="grayscale"><strong>Grayscale</strong></label>
+                <input type="range" id="grayscale" step="0.1" min="0"max="1" value="0" oninput="this.nextElementSibling.value = this.value">
+                <output id="e"  class="co" >0</output>
+               </li>
+               <li>
+                  <label for="blur"><strong>Blur</strong></label>
+                 <input type="range" id="blur" step="0.1" min="0"max="10" value="0" oninput="this.nextElementSibling.value = this.value">
+                 <output id="f" class="co">0</output>
+              </li>
+               <li>
+                   <label for="hue-rotate"><strong>Hue Rotate</strong></label>
+                    <input type="range" id="hue-rotate" min="0"max="350" value="0" oninput="this.nextElementSibling.value = this.value">
+                  <output id="g"  class="co" >0</output>
+              </li>
+               <li >
+                <a  download="image" id="download">Download</a>
+                <span   onclick="resetValue()">Reset</span>
+                </li>
+          </ul>
+        </div>
+    <script src="./js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,146 @@
+
+ *{
+    padding: 0 ;
+    margin:  0 ;
+    font-family: sans-serif;
+    background: #222;
+}  
+.container{
+
+    width: 95vw;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;  
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center; 
+    align-items: center;
+}
+.img img , canvas,.f{
+    max-width: 45vw;
+    max-height: 60vh;
+}
+.upload input{
+    display: none;
+}
+.upload label{
+    color: #ffffff;
+    padding: 8px 20px;
+    border: 2px #000000 outset;
+    cursor: pointer;
+    background: blue;
+}
+.upload label:hover{
+    background: #363b38;
+}
+.filters ul,.filters ul li{
+       display: flex;
+        margin:auto;
+        gap: 5px;  
+        direction: rtl;
+        width: 70%;
+        flex-direction: column ; 
+}
+.filters ul li label{
+    color: #fff;
+}
+.filters ul li:last-child{
+   flex-direction: row;
+   justify-content: space-around;
+}
+.filters ul li a{
+    color: #fff;
+    padding: 10px 20px;
+    background: #060;
+    border:outset rgb(26, 26, 87)  ;
+    cursor: pointer;
+}
+.filters ul li a:hover{
+    background: rgb(37, 37, 83);
+}
+.filters ul li span{
+    color: #fff;
+    padding: 10px 20px;
+    background: red;
+    border:outset  rgb(156, 83, 0);  
+    cursor: pointer;
+}
+.filters span:hover{
+    background:  rgb(128, 69, 2);
+}
+.container{
+    grid-template-columns: 3fr;
+    gap: 50px;
+}
+.img img , canvas ,.f{
+    max-width: 80vw;
+}
+.co{
+    color :#fff;
+}
+#l{
+    width: 22vw;
+    height: 65vh;
+    background: #000000;
+    padding: 10px; 
+    margin: 0%;
+    overflow: auto;
+    display: inline-block;
+    border-radius: 50px;   
+}
+h1{
+    font-family: sans-serif;
+    color: #fff;
+    margin-left:12% ;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center
+}
+ #l p{
+    font-family: sans-serif;
+    color: #fff;
+    padding:20px ; 
+    width: 17vw;
+    font-size: larger;
+    margin-left: 5%;
+    height: 7vh; 
+    margin-left:7% ;
+    border-radius: 20px;
+    display:  block;
+    cursor: pointer;   
+    flex-wrap: wrap;
+  }    
+#l p:hover{
+    background: rgb(168, 240, 168);
+    color: #000000;
+    padding:20px ; 
+    width: 17vw;
+    height:13vh;
+    border-radius:35px;  
+}   
+#l img {
+    padding:20px ; 
+    width: 200px;
+    height: 200px;
+    margin-left:  20%;
+    border-radius:50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.w{
+    margin-left: -8%;
+    color: #ffffff;
+    padding: 10px 20px;
+    border:  #000000 outset ;
+    cursor: pointer;
+    background:  rgb(21, 161, 2);
+}
+.w:hover{
+    color: #fff;
+    padding: 10px 20px;
+    background: rgb(0, 0, 0);
+    border:outset  rgb(156, 83, 0) ;  
+}
